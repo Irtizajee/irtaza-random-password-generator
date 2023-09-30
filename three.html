@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password</title>
+    <link rel="stylesheet" href="three.css">
+</head>
+
+<body>
+    <div class="generator_div">
+        <div> <label for="" class="PG">Password Generator</label>
+            <br>
+            <input style="text-align: center;" type="text" id="output">
+        </div>
+        <div>
+            <span id="range_viewer">14  length</span>
+            <br>
+            <input oninput="range_up()" type="range" name="" id="range" value="14" min="1" max="20">
+            <br>
+            <button id="minus_length" class="lng_btn">Minus length</button>
+            <button id="plus_length" class="lng_btn">Plus length</button>
+        </div>
+
+        <div >
+            <label onclick="label_lower()" class="label_check" for="lower">Lower
+                <input type="checkbox" name="" id="lower">
+                <span id="check_ball_track_lower" class="check_ball_track" ><span class="check_ball" id="check_ball_lower"></span></span>
+            </label>
+
+            <label  onclick="label_upper()" class="label_check" for="upper">upper
+                <input type="checkbox" name=""  id="upper">
+                <span id="check_ball_track_upper" class="check_ball_track" ><span class="check_ball" id="check_ball_upper"></span></span>
+            </label>
+
+            <label onclick="label_symbol()" class="label_check" for="symbol">Symbols
+                <input type="checkbox" name=""  id="symbol">
+                <span id="check_ball_track_symbol" class="check_ball_track" ><span class="check_ball" id="check_ball_symbol"></span></span>
+            </label>
+
+            <label onclick="label_number()" class="label_check" for="number">Numbers
+                <input type="checkbox" name="" id="number">
+                <span id="check_ball_track_number" class="check_ball_track" ><span class="check_ball" id="check_ball_number"></span></span>
+            </label>
+        </div>
+        <div style="text-align: center;">
+            <button id="random">Randoomize</button>
+
+            <br>
+            <span  id="length_zero"></span>
+        </div>
+    </div>
+    <!-- <script src="/practice/seven.js" ></script> -->
+    <script src="nine.js"></script>
+</body>
+
+</html>
